@@ -1,0 +1,514 @@
+/* Resetting Default Page Attributes and Full Body Styles */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+  }
+
+@media only screen and (max-width: 1200px) {
+    article > div {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #div1 > form {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 75%  !important;
+    }
+    article > div > h2 {
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #000 !important;
+    }
+
+}
+
+/* Header Styles */
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(59, 103, 139);
+    box-shadow: 0 5px 20px black;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+#hamburger-btn > button > img {
+    height: 35px;
+    width: 35px;
+    padding: 5px; 
+    display: flex;
+    float: left;
+    background-color: transparent;
+}
+
+#side-btn {
+    position: sticky;
+    background-color: rgb(59, 103, 139) ;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#side-btn:hover {
+    background-color:rgb(40, 69, 102) ;
+}
+
+#logo {
+    position: sticky;
+    padding: 5px;
+    height: 40px;
+    float: right;
+    display: inline-flex
+}
+
+#title {
+    position: sticky;
+    margin: auto;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2.0em;
+    text-shadow: darkslategrey 2px 2px;
+   
+}
+
+#title a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+
+/* Sidebar Styles */
+
+
+.side-bar {
+    background-color:rgb(59, 103, 139);
+    width: 9em;
+    height: 100%;
+    padding-top: 10px;
+    position: fixed;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    z-index: 9;
+    margin-top: 45px;
+    line-height: 1.5;
+    display: none;
+}
+
+.side-bar > nav > ul > li > a {
+    padding-left: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+.side-bar > nav > ul > li > a:hover {
+    background-color: rgb(40, 69, 102);
+    display: block;
+}
+
+/* Center Figure */
+
+
+.textover > img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.textover {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 45px;
+}
+
+.textover > figcaption {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3.5em;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: black 2px 2px;
+}
+
+/* Main Article Styles */
+
+
+article >div {
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article > div > h2 {
+    margin-top: 0.5em;
+    color: black;
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+article > div > h3 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: darkgreen;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+article > div > h4 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+article > div > p {
+    font-size: 1.2em;
+}
+
+/* Logout Button Formatting */
+
+.logout {
+    display: block;
+    width: 100%;
+    background-color: white;
+    text-align: right;
+}
+
+#logBtn {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+    border: 2px solid #d4d4d4;
+    box-shadow: 2px 2px 2px black;
+    font-size: 1em;
+    margin: 6em 1em 1em 0;
+    color: white;
+    background-color: rgb(40, 69, 102);
+    cursor: pointer;
+    
+}
+
+#logBtn:hover {
+    background-color: rgb(59, 103, 139);
+}
+
+/* Welcome Message Formatting */
+
+.welcome {
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: darkgray;
+}
+
+#welcome {
+   
+    padding-left: 1em;
+    color: black;
+    font-size: 2.75em;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginInstruct {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#optionsHead {
+    padding-top: 0.5em;
+    padding-left: 3em;
+    padding-bottom: 0.5em;
+    color: black;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#options {
+    padding-top: 0.5em;
+    padding-left: 4em;
+    padding-bottom: 0.5em;
+    color: black;
+    font-size: 1.75em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gif > img {
+    display: flex;
+    float: center;
+    margin: auto;
+    margin-bottom: 6em;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#gifLoad >img {
+    display: flex;
+    float: center;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 70px;
+}
+
+/* Add Trip Page Formatting */
+
+hr {
+    margin: 1em 0 1em 0;
+}
+
+#add-trip-div {
+    padding-top: 5em;
+    padding-left: 1em;
+}
+
+#add-trip-div > h3 {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#add-trip-div > p {
+    margin: auto;
+    padding-left: 1em;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add Trip Form Formatting */
+
+#trip-add-form {
+    padding-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2em;
+}
+#trip-table {
+    margin: auto;
+    border-spacing: 20px;
+}
+
+#summary-align {
+    vertical-align: top;
+}
+
+#trip-textarea {
+    resize: none;
+    margin-left: 2em;
+    width: 250px;
+    border-radius: 7px;
+    border: 2px solid #d4d4d4;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+.trip-labels {
+    font-size: 1.5em;
+    text-align: left;
+ 
+}
+
+.trip-inputs {
+    margin-left: 2em;
+    width: 250px;
+    height: 20px;
+    border-radius: 7px;
+    border: 2px solid #d4d4d4;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+
+.trip-submit {
+    padding: 5px;
+    margin-left: 2em;
+    float: right;
+     border-radius: 7px;
+    border: 2px solid #d4d4d4;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+/* All Trips Formatting */
+
+.adventures {
+    padding-top: 5em;
+}
+
+.alltripdiv {
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alltriph2 {
+    margin-top: 0.5em;
+    color: black;
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+.alltriph3 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: darkgreen;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.alltriph4 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.alltripp {
+    font-size: 1.2em;
+}
+
+#editBtn {
+    width: 25px;
+    padding-left: 0.5em;
+}
+
+
+/* Delete Trips Formatting */
+
+.boxotext {
+    width: 25em;
+    margin: auto;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 1em;
+    background-color: rgb(227, 237, 235);
+    padding: 1em;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.trip-delete {
+    padding: 5px;
+    margin-left: 2em;
+    float: right;
+    border-radius: 7px;
+    border: 2px solid #d4d4d4;
+    box-shadow: 2px 2px 2px black;
+    background-color: darkred !important;
+    margin-top: 0em;
+}
+
+/* Support Form Formatting */
+
+#divform {
+    display: flex;
+    margin: auto; 
+    padding-top: 1em;
+    background-color: darkgray;
+   
+   
+}
+
+#divform > #support-form {
+    position: sticky;
+   display: inline-block;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.support-label {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.support-inputs {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+    border: 2px solid #d4d4d4;
+    box-shadow: 2px 2px 2px black;
+    font-size: 1em;  
+}
+
+#divform > form > select {
+    cursor: pointer;
+}
+
+#submit {
+   
+    color: white;
+    background-color: rgb(40, 69, 102);
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(59, 103, 139);
+    
+}
+
+.all-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* Footer Formatting */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+   position: absolute;
+   left: 0;
+   bottom: 0 ;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(59, 103, 139);
+    color: white ;
+    text-align: center;
+    padding-top: 0.5em;
+    border-top: 5px solid rgb(59, 103, 139);
+    border-top-color:rgb(40, 69, 102) ;
+}
+
+
+footer > img {
+    height: 40px;
+}
