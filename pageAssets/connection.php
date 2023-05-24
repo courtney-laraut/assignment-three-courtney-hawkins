@@ -1,8 +1,16 @@
 <?php
+
+// Local 
 $servername = "localhost";
 $username = "testuser";
 $password = "SFHassign3#";
 $databasename = "halcanoetrips";
+
+// Remote
+// $servername = "localhost";
+// $username = "id20611221_courtneyhawkins";
+// $password = "Skillsforhire2023!";
+// $databasename = "id20611221_halcanoe2023";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $databasename);
